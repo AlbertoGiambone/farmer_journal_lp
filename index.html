@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Farmer Journal</title>
 
 <style>
@@ -49,6 +49,23 @@ h1 {
 .btn:hover {
   background: #005bb5;
   transform: scale(1.05);
+}
+
+/* LOGO */
+.logo {
+  margin-top: 40px;
+}
+
+.logo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 28px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.08);
 }
 
 /* SECTIONS */
@@ -140,9 +157,14 @@ footer {
 <header>
   <h1 class="fade-in">Farmer Journal</h1>
   <div class="subtitle fade-in delay">Your smart farming companion</div>
+
   <a href="https://apps.apple.com/app/farmer-journal/id1543853683" class="btn fade-in delay">
     Download on the App Store
   </a>
+
+  <div class="logo fade-in delay">
+    <img src="logo.png" alt="Farmer Journal Logo" />
+  </div>
 </header>
 
 <section class="section">
@@ -156,7 +178,6 @@ footer {
   <h2 class="fade-in">Powerful Features</h2>
 
   <div class="features">
-
     <div class="feature fade-in">
       <h3>🌱 Planting</h3>
       <p>Track crops, varieties, and planting schedules.</p>
@@ -176,7 +197,6 @@ footer {
       <h3>📊 Insights</h3>
       <p>Make smarter decisions with your data.</p>
     </div>
-
   </div>
 </section>
 
@@ -184,11 +204,10 @@ footer {
   <h2 class="fade-in">See it in action</h2>
 
   <div class="screenshots">
-    <img src="FieldDetailVC.png" class="fade-in">
-    <img src="HomeVC.png" class="fade-in delay">
-    <img src="SeedingVC.png" class="fade-in">
+    <img src="FieldDetailVC.png" class="fade-in" alt="Field Detail Screenshot" />
+    <img src="HomeVC.png" class="fade-in delay" alt="Home Screen Screenshot" />
+    <img src="SeedingVC.png" class="fade-in" alt="Seeding Screen Screenshot" />
   </div>
-
 </section>
 
 <section class="section light">
