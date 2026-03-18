@@ -1,1 +1,3 @@
-farmerjournal.app
+Type: CNAME
+Host: www
+Value: tuonome.github.io
