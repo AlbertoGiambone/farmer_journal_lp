@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farmer Journal</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Arial;
+  background: #ffffff;
+  color: #1d1d1f;
+  scroll-behavior: smooth;
+}
+
+/* HERO */
+header {
+  text-align: center;
+  padding: 120px 20px 80px;
+  background: linear-gradient(to bottom, #f5f5f7, #ffffff);
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #6e6e73;
+  margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 32px;
+  font-size: 18px;
+  background: #0071e3;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #005bb5;
+  transform: scale(1.05);
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section.light {
+  background: #f5f5f7;
+}
+
+/* FEATURES */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.feature {
+  max-width: 260px;
+  transition: transform 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+}
+
+.feature h3 {
+  font-size: 22px;
+}
+
+.feature p {
+  color: #6e6e73;
+}
+
+/* SCREENSHOTS (NO FRAME) */
+.screenshots {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.screenshots img {
+  height: 520px;
+  border-radius: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease;
+}
+
+.screenshots img:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 50px;
+  font-size: 14px;
+  color: #6e6e73;
+}
+
+/* ANIMATIONS */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease forwards;
+}
+
+.fade-in.delay {
+  animation-delay: 0.3s;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1 class="fade-in">Farmer Journal</h1>
+  <div class="subtitle fade-in delay">Your smart farming companion</div>
+  <a href="https://apps.apple.com/app/farmer-journal/id1543853683" class="btn fade-in delay">
+    Download on the App Store
+  </a>
+</header>
+
+<section class="section">
+  <h2 class="fade-in">All your farm. One place.</h2>
+  <p class="subtitle fade-in delay">
+    Track crops, manage treatments, and optimize your agricultural workflow.
+  </p>
+</section>
+
+<section class="section light">
+  <h2 class="fade-in">Powerful Features</h2>
+
+  <div class="features">
+
+    <div class="feature fade-in">
+      <h3>🌱 Planting</h3>
+      <p>Track crops, varieties, and planting schedules.</p>
+    </div>
+
+    <div class="feature fade-in delay">
+      <h3>💧 Irrigation</h3>
+      <p>Manage water usage and treatments efficiently.</p>
+    </div>
+
+    <div class="feature fade-in">
+      <h3>🧪 Fertilization</h3>
+      <p>Monitor nutrients and improve crop health.</p>
+    </div>
+
+    <div class="feature fade-in delay">
+      <h3>📊 Insights</h3>
+      <p>Make smarter decisions with your data.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="fade-in">See it in action</h2>
+
+  <div class="screenshots">
+    <img src="FieldDetailVC.png" class="fade-in">
+    <img src="HomeVC.png" class="fade-in delay">
+    <img src="SeedingVC.png" class="fade-in">
+  </div>
+
+</section>
+
+<section class="section light">
+  <h2 class="fade-in">Start managing your farm smarter</h2>
+  <a href="https://apps.apple.com/app/farmer-journal/id1543853683" class="btn fade-in delay">
+    Get the App
+  </a>
+</section>
+
+<footer>
+  © 2026 Farmer Journal. All rights reserved.
+</footer>
+
+</body>
+</html>
